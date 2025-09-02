@@ -7,7 +7,7 @@ import requests
 
 # Define today and url for easier syntax
 today = dt.today().strftime("%Y-%m-%d")
-url = f"https://api.nasa.gov/planetary/apod?api_key=8Dj7olElsXvPyNSNSedPC5zF8vTuClDsyMH99XBr&date={today}"
+url = f"https://api.nasa.gov/planetary/apod?api_key=&date={today}"
 
 # Request APOD as JSON
 get = requests.get(url).json()
