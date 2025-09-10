@@ -20,7 +20,8 @@ app.layout = html.Div([
     dbc.NavbarSimple([
         dbc.NavLink("home", href="/", active="exact"),
         dbc.NavLink("Page 1", href="/page1", active="exact"),
-        dbc.NavLink("Page 2", href="/page2", active="exact")
+        dbc.NavLink("Page 2", href="/page2", active="exact"),
+        dbc.NavLink("Page 3", href="/page3", active="exact")
     ], brand = "Multi-Page App"),
     dash.page_container
 ])

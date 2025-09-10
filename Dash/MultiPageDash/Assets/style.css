@@ -27,3 +27,70 @@ a:hover {
     text-decoration: underline;
     background-color: grey;
 }
+
+/* Page 1 layout -- with blocking -- */
+.page1-grid {
+    /* allow columns */
+    display: flex;
+    flex-direction: column;
+    /* spacing */
+    gap: 12px;
+    padding: 20px
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.block {
+    border: 2px dashed black;
+    /* Round the border */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    background-color: beige;
+    color: black;
+    font-weight: 600;
+    margin: auto 10px
+}
+
+/* Responsive design for screen sizes */
+
+@media (max-width: 768px) {
+    .row-2{
+        grid-template-columns: 1fr
+    }
+}
+
+.page2-wrap {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#btn-cat {
+    display: block;
+    font-size: 18px;
+    border: 2px solid black;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background-color: #0ea5e9;
+    color: white;
+    margin: 30px;
+    max-width: 200px;
+}
+
+#btn-cat:hover {
+    text-decoration: underline;
+}
+
+#cat-fact {
+    display: block;
+    padding: 14px 16px;
+    background-color: white;
+    color: black;
+    line-height: 1.5;
+}
